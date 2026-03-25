@@ -1,0 +1,116 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgb(15, 23, 42), rgb(30, 41, 59), rgb(15, 23, 42));
+}
+
+.backButton {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: rgb(148, 163, 184);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 40;
+  transition: color 200ms;
+}
+
+.backButton:hover {
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.heading {
+  font-size: clamp(3rem, 8vw, 4rem);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: rgb(203, 213, 225);
+  font-size: 1.125rem;
+}
+
+.paragraph {
+  margin: 0;
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.skillsList {
+  list-style: disc;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillsItem {
+  color: rgb(203, 213, 225);
+}
+
+.experienceSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceItem {
+  border-left: 2px solid;
+  padding-left: 1.5rem;
+}
+
+.experienceItemBlue {
+  border-left-color: rgb(96, 165, 250);
+}
+
+.experienceItemCyan {
+  border-left-color: rgb(34, 211, 238);
+}
+
+.experienceTitle {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.experienceDate {
+  color: rgb(148, 163, 184);
+}
+
+.experienceDescription {
+  color: rgb(203, 213, 225);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, rgb(59, 130, 246), rgb(34, 211, 238));
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: all 300ms;
+  box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+}
+
+.ctaButton:hover {
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.5);
+}

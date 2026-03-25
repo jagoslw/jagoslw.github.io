@@ -1,0 +1,150 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgb(15, 23, 42), rgb(30, 41, 59), rgb(15, 23, 42));
+}
+
+.backButton {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: rgb(148, 163, 184);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 40;
+  transition: color 200ms;
+}
+
+.backButton:hover {
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.heading {
+  font-size: clamp(3rem, 8vw, 4rem);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: rgb(148, 163, 184);
+  margin-bottom: 3rem;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.projectCard {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  background: rgba(30, 41, 59, 0.5);
+  overflow: hidden;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(37, 99, 235, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.projectCard:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 10;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+}
+
+.projectSubtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(148, 163, 184);
+    margin-bottom: 1rem;
+}
+
+.projectDescription {
+  color: rgb(148, 163, 184);
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  background: rgba(51, 65, 85, 0.5);
+  color: rgb(203, 213, 225);
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(71, 85, 105, 0.5);
+}
+
+.projectLink {
+  display: inline-block;
+  color: rgb(96, 165, 250);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 200ms;
+  margin-top: auto;
+}
+
+.projectLink:hover {
+  color: rgb(34, 211, 238);
+}
+
+.ctaSection {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, rgb(59, 130, 246), rgb(34, 211, 238));
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 300ms;
+  box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+}
+
+.ctaButton:hover {
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.5);
+}
