@@ -44,6 +44,16 @@ export default function Home() {
           {/* Quick Links Grid */}
           <div className={styles.cardsGrid}>
             <Link
+              href="https://github.com/jagoslw"
+              className={`${styles.card} ${styles.cardAbout}`}
+            >
+              <div className={styles.cardOverlay} />
+              <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>GitHub</h3>
+                <p className={styles.cardDescription}>View my code and contributions</p>
+              </div>
+            </Link>
+            <Link
               href="/about"
               className={`${styles.card} ${styles.cardAbout}`}
             >
